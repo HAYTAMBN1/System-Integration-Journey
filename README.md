@@ -18,7 +18,8 @@ Willkommen! This repository documents my technical progress and hands-on labs as
 * **Lesson 02: BIOS / UEFI & Boot Process**
   * Configuring boot sequences in VMware.
   * Status: 🕒 In Progress
-Follow my journey on [LinkedIn!](https://www.linkedin.com/in/haitam-ben-haddou/)
+  * 
+*Follow my journey on <a href="https://www.linkedin.com/in/haitam-ben-haddou/" target="_blank">LinkedIn</a>!*
 ---
 
 ## 📂 Project Structure
