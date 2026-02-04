@@ -1,0 +1,16 @@
+# Lesson 02: Linux Boot Process Analysis
+# Performed on: 2026-02-04
+# Context: System analyzed via TTY3 after GUI failure.
+
+1. Boot Time Analysis:
+Command: systemd-analyze
+Result: Startup finished in 3.952s (2.576s kernel + 1.376s userspace).
+Note: Excellent boot speed despite the graphical interface issues.
+
+2. Storage Devices Check:
+Command: lsblk
+Result: Main disk 'sda' (80.1G) detected with partition 'sda1' mounted on '/'.
+
+3. Disk Space Usage:
+Command: df -h
+Purpose: To ensure the system has enough space to boot and function properly.
