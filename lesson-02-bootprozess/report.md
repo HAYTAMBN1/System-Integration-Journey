@@ -25,5 +25,13 @@ The system now looks for bootable media in the CD-ROM drive before attempting to
 
 ![Linux Boot Analysis](./screenshots/linux_boot_analysis.png)
 
+---
+### 🧠 Theoretisches Wissen (Azubi-Task)
+- **BIOS/UEFI:** Initialisiert die Hardware und startet den Bootprozess.
+- **Der Bootvorgang:** 1. Power On (Strom an).
+  2. POST (Hardware-Check).
+  3. Bootloader (GRUB): Auswahl des Kernels.
+  4. Kernel: Startet das Betriebssystem.
+
 ## 💡 Final Decision
 To ensure a stable learning environment for the upcoming lessons, I am transitioning to **Ubuntu 24.04.3 LTS**.
