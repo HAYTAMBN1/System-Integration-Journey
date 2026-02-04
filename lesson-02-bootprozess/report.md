@@ -26,7 +26,7 @@ The system now looks for bootable media in the CD-ROM drive before attempting to
 ![Linux Boot Analysis](./screenshots/linux_boot_analysis.png)
 
 ---
-### 🧠 Theoretisches Wissen (Azubi-Task)
+### 🧠 Theoretisches Wissen 
 - **BIOS/UEFI:** Initialisiert die Hardware und startet den Bootprozess.
 - **Der Bootvorgang:** 1. Power On (Strom an).
   2. POST (Hardware-Check).
