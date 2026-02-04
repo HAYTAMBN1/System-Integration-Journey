@@ -12,13 +12,14 @@ Willkommen! This repository documents my technical progress and hands-on labs as
 ## 📚 Curriculum & Lab Reports
 
 ### Phase 1: Hardware & System Basics
-* **[Lesson 01: Hardware-Grundlagen](./Hardware_Basics.md)** * Understanding PC components and compatibility.
+* **[Lesson 01: Hardware-Grundlagen](./Hardware_Basics.md)** 
+  * Understanding PC components and compatibility.
   * Status: ✅ Completed
 
 * **Lesson 02: BIOS / UEFI & Boot Process**
   * Configuring boot sequences in VMware.
-  * Status: 🕒 In Progress
-  * 
+  * Status: ✅ Completed
+    
 *Follow my journey on <a href="https://www.linkedin.com/in/haitam-ben-haddou/" target="_blank">LinkedIn</a>!*
 ---
 
@@ -31,3 +32,4 @@ System-Integration-Journey/
 └── lesson-02-bootprozess/    # Next Chapter
     ├── report.md
     └── screenshots/
+    └── commands.txt
