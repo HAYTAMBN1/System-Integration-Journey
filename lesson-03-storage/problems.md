@@ -12,7 +12,7 @@ After successfully mounting the first partition to `/data`, I attempted to modif
 ### 2. The Problem (The Red Warning)
 The system issued a critical warning preventing any changes to the disk structure.
 
-![The Red Warning in Fdisk](screenshots/02-fdisk-partitioning.png) 
+![The Red Warning in Fdisk](screenshots/06-fdisk-problem.png) 
 *(Note: As seen in the screenshot, the disk was "busy" because it was already active in the system)*
 
 ### 3. The Analysis
