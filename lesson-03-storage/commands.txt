@@ -1,0 +1,49 @@
+# =========================================================
+# Project: Linux Storage & Partitioning Management
+# Target Disk: /dev/sdb (20GB Virtual Disk)
+# =========================================================
+
+# 1. DISK IDENTIFICATION
+# Identify the new disk and check its name
+lsblk
+
+# 2. PARTITIONING (GPT)
+# Open the fdisk utility for the target disk
+sudo fdisk /dev/sdb
+# Inside fdisk:
+# 'g' -> Create a new empty GPT partition table
+# 'n' -> Add partition 1 (Selected +10G for /data)
+# 'n' -> Add partition 2 (Selected remainder for /backup)
+# 'w' -> Write changes and exit
+
+# 3. FILESYSTEM CREATION (FORMATTING)
+# Creating ext4 filesystem for both partitions
+sudo mkfs.ext4 /dev/sdb1
+sudo mkfs.ext4 /dev/sdb2
+
+# 4. MOUNTING PROCESS
+# Create mount points in the root directory
+sudo mkdir /data
+sudo mkdir /backup
+
+# Mount the partitions to the folders
+sudo mount /dev/sdb1 /data
+sudo mount /dev/sdb2 /backup
+
+# 5. VERIFICATION
+# Check disk usage and mount points
+df -h
+
+# 6. PERSISTENCE (AUTO-MOUNT)
+# Edit /etc/fstab for permanent mounting
+sudo nano /etc/fstab
+# Add these lines to the end of the file:
+# /dev/sdb1  /data    ext4  defaults  0  2
+# /dev/sdb2  /backup  ext4  defaults  0  2
+
+# Test the fstab configuration without rebooting
+sudo mount -a
+
+# 7. TROUBLESHOOTING
+# Safely unmount a partition if changes are needed
+sudo umount /data
